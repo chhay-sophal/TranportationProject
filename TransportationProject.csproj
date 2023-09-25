@@ -73,6 +73,12 @@
     <Compile Include="Panels\PanelEmployees.Designer.cs">
       <DependentUpon>PanelEmployees.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panels\PanelFreightShipments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelFreightShipments.Designer.cs">
+      <DependentUpon>PanelFreightShipments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panels\PanelModifyEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,36 @@
     <Compile Include="Panels\PanelPassengerBookings.Designer.cs">
       <DependentUpon>PanelPassengerBookings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panels\PanelRoutes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelRoutes.Designer.cs">
+      <DependentUpon>PanelRoutes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelTrips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelTrips.Designer.cs">
+      <DependentUpon>PanelTrips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelUsers.Designer.cs">
+      <DependentUpon>PanelUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelProfile.Designer.cs">
+      <DependentUpon>PanelProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelVehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelVehicles.Designer.cs">
+      <DependentUpon>PanelVehicles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\DashboardForm.resx">
@@ -105,6 +141,9 @@
     <EmbeddedResource Include="Panels\PanelEmployees.resx">
       <DependentUpon>PanelEmployees.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelFreightShipments.resx">
+      <DependentUpon>PanelFreightShipments.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Panels\PanelModifyEmployee.resx">
       <DependentUpon>PanelModifyEmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +152,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\PanelPassengerBookings.resx">
       <DependentUpon>PanelPassengerBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelRoutes.resx">
+      <DependentUpon>PanelRoutes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelTrips.resx">
+      <DependentUpon>PanelTrips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelUsers.resx">
+      <DependentUpon>PanelUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelProfile.resx">
+      <DependentUpon>PanelProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelVehicles.resx">
+      <DependentUpon>PanelVehicles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

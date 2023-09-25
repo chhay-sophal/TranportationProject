@@ -47,16 +47,23 @@ namespace TransportationProject.Panels
 
         private void btnSearchEmployee_Click(object sender, EventArgs e)
         {
-            string employeeId = txtEmployeeId.Text; // Assuming you have a TextBox named txtEmployeeId to input the employee ID
+            string searchText = txtEmployeesSearchBox.Text.Trim(); // Assuming you have a TextBox named txtEmployeeId to input the employee ID
 
             // Perform the search query using the employeeId and display the result in the DataGridView
             using (SqlConnection connection = new SqlConnection(DatabaseHelper.ConnectionString))
             {
                 connection.Open();
 
-                string sqlQuery = "SELECT * FROM Employees WHERE EmployeeID = @EmployeeID";
+                string sqlQuery = "SELECT * FROM Employees WHERE " +
+                    "EmployeeID LIKE @SearchText OR " +
+                    "FirstName LIKE @SearchText OR " +
+                    "LastName LIKE @SearchText OR " +
+                    "Sex LIKE @SearchText OR " +
+                    "ContactNumber LIKE @SearchText OR " +
+                    "Role LIKE @SearchText";
+
                 SqlCommand command = new SqlCommand(sqlQuery, connection);
-                command.Parameters.AddWithValue("@EmployeeId", employeeId);
+                command.Parameters.AddWithValue("@SearchText", "%" + searchText + "%");
 
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
                 DataTable dataTable = new DataTable();

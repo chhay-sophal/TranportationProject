@@ -34,7 +34,7 @@
             this.dgvEmployees = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSearchEmployee = new System.Windows.Forms.Button();
-            this.txtEmployeeId = new System.Windows.Forms.TextBox();
+            this.txtEmployeesSearchBox = new System.Windows.Forms.TextBox();
             this.btnModifyEmployee = new System.Windows.Forms.Button();
             this.btnDeleteEmployee = new System.Windows.Forms.Button();
             this.btnAddEmployee = new System.Windows.Forms.Button();
@@ -87,7 +87,7 @@
             this.tableLayoutPanel2.Controls.Add(this.dgvEmployees, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnSearchEmployee, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.txtEmployeeId, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtEmployeesSearchBox, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 47);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -117,7 +117,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(151, 34);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Employee ID";
+            this.label2.Text = "Search Employees";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnSearchEmployee
@@ -134,15 +134,15 @@
             this.btnSearchEmployee.UseVisualStyleBackColor = false;
             this.btnSearchEmployee.Click += new System.EventHandler(this.btnSearchEmployee_Click);
             // 
-            // txtEmployeeId
+            // txtEmployeesSearchBox
             // 
-            this.txtEmployeeId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmployeeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmployeeId.Location = new System.Drawing.Point(160, 3);
-            this.txtEmployeeId.Multiline = true;
-            this.txtEmployeeId.Name = "txtEmployeeId";
-            this.txtEmployeeId.Size = new System.Drawing.Size(308, 28);
-            this.txtEmployeeId.TabIndex = 3;
+            this.txtEmployeesSearchBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEmployeesSearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmployeesSearchBox.Location = new System.Drawing.Point(160, 3);
+            this.txtEmployeesSearchBox.Multiline = true;
+            this.txtEmployeesSearchBox.Name = "txtEmployeesSearchBox";
+            this.txtEmployeesSearchBox.Size = new System.Drawing.Size(308, 28);
+            this.txtEmployeesSearchBox.TabIndex = 3;
             // 
             // btnModifyEmployee
             // 
@@ -211,7 +211,7 @@
         private System.Windows.Forms.DataGridView dgvEmployees;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSearchEmployee;
-        private System.Windows.Forms.TextBox txtEmployeeId;
+        private System.Windows.Forms.TextBox txtEmployeesSearchBox;
         private System.Windows.Forms.Button btnModifyEmployee;
         private System.Windows.Forms.Button btnDeleteEmployee;
         private System.Windows.Forms.Button btnAddEmployee;
