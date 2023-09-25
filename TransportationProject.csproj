@@ -74,6 +74,12 @@
     <Compile Include="Panels\PanelAddUsers.Designer.cs">
       <DependentUpon>PanelAddUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panels\PanelAddVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelAddVehicle.Designer.cs">
+      <DependentUpon>PanelAddVehicle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panels\PanelEmployees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,12 @@
     </Compile>
     <Compile Include="Panels\PanelModifyUser.Designer.cs">
       <DependentUpon>PanelModifyUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelModifyVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelModifyVehicle.Designer.cs">
+      <DependentUpon>PanelModifyVehicle.cs</DependentUpon>
     </Compile>
     <Compile Include="Panels\PanelOverview.cs">
       <SubType>Form</SubType>
@@ -154,6 +166,9 @@
     <EmbeddedResource Include="Panels\PanelAddUsers.resx">
       <DependentUpon>PanelAddUsers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelAddVehicle.resx">
+      <DependentUpon>PanelAddVehicle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Panels\PanelEmployees.resx">
       <DependentUpon>PanelEmployees.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\PanelModifyUser.resx">
       <DependentUpon>PanelModifyUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelModifyVehicle.resx">
+      <DependentUpon>PanelModifyVehicle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\PanelOverview.resx">
       <DependentUpon>PanelOverview.cs</DependentUpon>
