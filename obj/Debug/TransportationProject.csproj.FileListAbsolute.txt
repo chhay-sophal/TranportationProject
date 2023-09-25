@@ -21,3 +21,5 @@ C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2
 C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelUsers.resources
 C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelProfile.resources
 C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelVehicles.resources
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelAddUsers.resources
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelModifyUser.resources

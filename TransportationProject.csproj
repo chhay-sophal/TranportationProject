@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Classes\DatabaseHelper.cs" />
     <Compile Include="Classes\FormLoader.cs" />
+    <Compile Include="Classes\FormUtils.cs" />
     <Compile Include="Forms\DashboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +68,12 @@
     <Compile Include="Panels\PanelAddEmployee.Designer.cs">
       <DependentUpon>PanelAddEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panels\PanelAddUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelAddUsers.Designer.cs">
+      <DependentUpon>PanelAddUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panels\PanelEmployees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +91,12 @@
     </Compile>
     <Compile Include="Panels\PanelModifyEmployee.Designer.cs">
       <DependentUpon>PanelModifyEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelModifyUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelModifyUser.Designer.cs">
+      <DependentUpon>PanelModifyUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Panels\PanelOverview.cs">
       <SubType>Form</SubType>
@@ -138,6 +151,9 @@
     <EmbeddedResource Include="Panels\PanelAddEmployee.resx">
       <DependentUpon>PanelAddEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelAddUsers.resx">
+      <DependentUpon>PanelAddUsers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Panels\PanelEmployees.resx">
       <DependentUpon>PanelEmployees.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\PanelModifyEmployee.resx">
       <DependentUpon>PanelModifyEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelModifyUser.resx">
+      <DependentUpon>PanelModifyUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\PanelOverview.resx">
       <DependentUpon>PanelOverview.cs</DependentUpon>

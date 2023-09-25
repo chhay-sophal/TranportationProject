@@ -31,16 +31,7 @@ namespace TransportationProject.Panels
 
         private DashboardForm FindDashboardForm()
         {
-            Control parent = this.Parent;
-            while (parent != null)
-            {
-                if (parent is DashboardForm dashboardForm)
-                {
-                    return dashboardForm;
-                }
-                parent = parent.Parent;
-            }
-            return null;
+            return FormUtils.FindParentForm<DashboardForm>(this);
         }
 
         private void btnModifyEmployeeBack_Click(object sender, EventArgs e)
