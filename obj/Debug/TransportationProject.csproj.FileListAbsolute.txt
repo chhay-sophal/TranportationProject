@@ -1,0 +1,17 @@
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\bin\Debug\TransportationProject.exe.config
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\bin\Debug\TransportationProject.exe
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\bin\Debug\TransportationProject.pdb
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.csproj.AssemblyReference.cache
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Properties.Resources.resources
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.csproj.GenerateResource.cache
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.csproj.CoreCompileInputs.cache
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.exe
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.pdb
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Forms.DashboardForm.resources
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Forms.LoginForm.resources
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelOverview.resources
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelEmployees.resources
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelPassengerBookings.resources
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelAddEmployee.resources
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelModifyEmployee.resources
