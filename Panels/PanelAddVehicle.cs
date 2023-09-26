@@ -28,7 +28,7 @@ namespace TransportationProject.Panels
 
         private void btnAddVehicleBack_Click(object sender, EventArgs e)
         {
-            // Open a PanelEmployees form
+            // Open a PanelVehicles form
             Form form = new PanelVehicles();
             DashboardForm dashboardForm = FindDashboardForm();
             if (dashboardForm != null)

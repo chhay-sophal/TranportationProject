@@ -25,3 +25,5 @@ C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2
 C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelModifyUser.resources
 C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelAddVehicle.resources
 C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelModifyVehicle.resources
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelAddRoute.resources
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelModifyRoute.resources

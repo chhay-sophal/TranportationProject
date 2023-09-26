@@ -68,6 +68,12 @@
     <Compile Include="Panels\PanelAddEmployee.Designer.cs">
       <DependentUpon>PanelAddEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panels\PanelAddRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelAddRoute.Designer.cs">
+      <DependentUpon>PanelAddRoute.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panels\PanelAddUsers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,12 @@
     </Compile>
     <Compile Include="Panels\PanelModifyEmployee.Designer.cs">
       <DependentUpon>PanelModifyEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelModifyRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelModifyRoute.Designer.cs">
+      <DependentUpon>PanelModifyRoute.cs</DependentUpon>
     </Compile>
     <Compile Include="Panels\PanelModifyUser.cs">
       <SubType>Form</SubType>
@@ -163,6 +175,9 @@
     <EmbeddedResource Include="Panels\PanelAddEmployee.resx">
       <DependentUpon>PanelAddEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelAddRoute.resx">
+      <DependentUpon>PanelAddRoute.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Panels\PanelAddUsers.resx">
       <DependentUpon>PanelAddUsers.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\PanelModifyEmployee.resx">
       <DependentUpon>PanelModifyEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelModifyRoute.resx">
+      <DependentUpon>PanelModifyRoute.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\PanelModifyUser.resx">
       <DependentUpon>PanelModifyUser.cs</DependentUpon>
