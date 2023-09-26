@@ -72,30 +72,48 @@ namespace TransportationProject.Panels
 
         private void btnAddUserAdd_Click(object sender, EventArgs e)
         {
-            string employeeId = cbxUserEmployeeId.SelectedValue.ToString();
-            string username = txtUserUsername.Text;
-            string password = txtUserPassword.Text;
-            string role = cbxUserRole.Text;
-
-            // Validate the input
-            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(role))
+            try
             {
-                MessageBox.Show("Please fill in all the fields.");
-                return;
+                // Retrieve the selected employeeId value
+                string employeeId = cbxUserEmployeeId.SelectedValue?.ToString();
+
+                // Check if employeeId is null or empty
+                if (string.IsNullOrWhiteSpace(employeeId))
+                {
+                    MessageBox.Show("Please select an employee.", "Missing Employee", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Retrieve other values from input controls
+                string username = txtUserUsername.Text;
+                string password = txtUserPassword.Text;
+                string role = cbxUserRole.Text;
+
+                // Validate the input
+                if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(role))
+                {
+                    MessageBox.Show("Please fill in all the fields.", "Missing Fields", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Insert the user data into the database
+                InsertUser(employeeId, username, password, role);
+
+                // Optionally, you can show a success message or perform other actions as needed
+                MessageBox.Show("User added successfully!", "Add Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Open a PanelUsers form
+                Form form = new PanelUsers();
+                DashboardForm dashboardForm = FindDashboardForm();
+                if (dashboardForm != null)
+                {
+                    FormLoader.LoadForm(dashboardForm.mainpanel, form);
+                }
             }
-
-            // Insert the user data into the database
-            InsertUser(employeeId, username, password, role);
-
-            // Optionally, you can show a success message or perform other actions as needed
-            MessageBox.Show("User added successfully!", "Add Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            // Open a PanelEmployees form
-            Form form = new PanelUsers();
-            DashboardForm dashboardForm = FindDashboardForm();
-            if (dashboardForm != null)
+            catch (Exception ex)
             {
-                FormLoader.LoadForm(dashboardForm.mainpanel, form);
+                // Handle the exception
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

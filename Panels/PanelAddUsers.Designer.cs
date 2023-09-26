@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtUserPassword = new System.Windows.Forms.TextBox();
             this.txtUserUsername = new System.Windows.Forms.TextBox();
             this.btnAddUserAdd = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -39,7 +40,6 @@
             this.btnAddUserBack = new System.Windows.Forms.Button();
             this.cbxUserEmployeeId = new System.Windows.Forms.ComboBox();
             this.cbxUserRole = new System.Windows.Forms.ComboBox();
-            this.txtUserPassword = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,6 +76,15 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(634, 444);
             this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // txtUserPassword
+            // 
+            this.txtUserPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtUserPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserPassword.Location = new System.Drawing.Point(319, 234);
+            this.txtUserPassword.Name = "txtUserPassword";
+            this.txtUserPassword.Size = new System.Drawing.Size(152, 26);
+            this.txtUserPassword.TabIndex = 16;
             // 
             // txtUserUsername
             // 
@@ -197,20 +206,12 @@
             this.cbxUserRole.FormattingEnabled = true;
             this.cbxUserRole.Items.AddRange(new object[] {
             "Administrator",
-            "Staff"});
+            "Dispatcher",
+            "Receptionist"});
             this.cbxUserRole.Location = new System.Drawing.Point(319, 288);
             this.cbxUserRole.Name = "cbxUserRole";
             this.cbxUserRole.Size = new System.Drawing.Size(152, 28);
             this.cbxUserRole.TabIndex = 15;
-            // 
-            // txtUserPassword
-            // 
-            this.txtUserPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtUserPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserPassword.Location = new System.Drawing.Point(319, 234);
-            this.txtUserPassword.Name = "txtUserPassword";
-            this.txtUserPassword.Size = new System.Drawing.Size(152, 26);
-            this.txtUserPassword.TabIndex = 16;
             // 
             // PanelAddUsers
             // 

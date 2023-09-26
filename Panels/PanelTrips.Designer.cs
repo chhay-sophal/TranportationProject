@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvRoutes = new System.Windows.Forms.DataGridView();
+            this.dgvTrips = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnSearchRoutes = new System.Windows.Forms.Button();
-            this.txtRoutesSearchBox = new System.Windows.Forms.TextBox();
-            this.btnModifyRoute = new System.Windows.Forms.Button();
-            this.btnDeleteRoute = new System.Windows.Forms.Button();
-            this.btnAddRoute = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRoutes)).BeginInit();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtSearchBox = new System.Windows.Forms.TextBox();
+            this.btnModify = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTrips)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvRoutes
+            // dgvTrips
             // 
-            this.dgvRoutes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvRoutes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel2.SetColumnSpan(this.dgvRoutes, 3);
-            this.dgvRoutes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvRoutes.Location = new System.Drawing.Point(3, 37);
-            this.dgvRoutes.Name = "dgvRoutes";
-            this.dgvRoutes.Size = new System.Drawing.Size(622, 309);
-            this.dgvRoutes.TabIndex = 0;
+            this.dgvTrips.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvTrips.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel2.SetColumnSpan(this.dgvTrips, 3);
+            this.dgvTrips.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTrips.Location = new System.Drawing.Point(3, 37);
+            this.dgvTrips.Name = "dgvTrips";
+            this.dgvTrips.Size = new System.Drawing.Size(622, 309);
+            this.dgvTrips.TabIndex = 0;
             // 
             // label1
             // 
@@ -75,9 +75,9 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btnModifyRoute, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btnDeleteRoute, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btnAddRoute, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnModify, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnDelete, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnAdd, 2, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -95,10 +95,10 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Controls.Add(this.dgvRoutes, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.dgvTrips, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnSearchRoutes, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.txtRoutesSearchBox, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnSearch, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtSearchBox, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 47);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -117,69 +117,73 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(151, 34);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Search Routes";
+            this.label2.Text = "Search Trips";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // btnSearchRoutes
+            // btnSearch
             // 
-            this.btnSearchRoutes.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnSearchRoutes.BackColor = System.Drawing.Color.Blue;
-            this.btnSearchRoutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchRoutes.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSearchRoutes.Location = new System.Drawing.Point(474, 3);
-            this.btnSearchRoutes.Name = "btnSearchRoutes";
-            this.btnSearchRoutes.Size = new System.Drawing.Size(151, 28);
-            this.btnSearchRoutes.TabIndex = 2;
-            this.btnSearchRoutes.Text = "Search";
-            this.btnSearchRoutes.UseVisualStyleBackColor = false;
+            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnSearch.BackColor = System.Drawing.Color.Blue;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSearch.Location = new System.Drawing.Point(474, 3);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(151, 28);
+            this.btnSearch.TabIndex = 2;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // txtRoutesSearchBox
+            // txtSearchBox
             // 
-            this.txtRoutesSearchBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRoutesSearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRoutesSearchBox.Location = new System.Drawing.Point(160, 3);
-            this.txtRoutesSearchBox.Multiline = true;
-            this.txtRoutesSearchBox.Name = "txtRoutesSearchBox";
-            this.txtRoutesSearchBox.Size = new System.Drawing.Size(308, 28);
-            this.txtRoutesSearchBox.TabIndex = 3;
+            this.txtSearchBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchBox.Location = new System.Drawing.Point(160, 3);
+            this.txtSearchBox.Multiline = true;
+            this.txtSearchBox.Name = "txtSearchBox";
+            this.txtSearchBox.Size = new System.Drawing.Size(308, 28);
+            this.txtSearchBox.TabIndex = 3;
             // 
-            // btnModifyRoute
+            // btnModify
             // 
-            this.btnModifyRoute.BackColor = System.Drawing.Color.Silver;
-            this.btnModifyRoute.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnModifyRoute.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModifyRoute.Location = new System.Drawing.Point(3, 402);
-            this.btnModifyRoute.Name = "btnModifyRoute";
-            this.btnModifyRoute.Size = new System.Drawing.Size(205, 39);
-            this.btnModifyRoute.TabIndex = 3;
-            this.btnModifyRoute.Text = "Modify";
-            this.btnModifyRoute.UseVisualStyleBackColor = false;
+            this.btnModify.BackColor = System.Drawing.Color.Silver;
+            this.btnModify.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModify.Location = new System.Drawing.Point(3, 402);
+            this.btnModify.Name = "btnModify";
+            this.btnModify.Size = new System.Drawing.Size(205, 39);
+            this.btnModify.TabIndex = 3;
+            this.btnModify.Text = "Modify";
+            this.btnModify.UseVisualStyleBackColor = false;
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
-            // btnDeleteRoute
+            // btnDelete
             // 
-            this.btnDeleteRoute.BackColor = System.Drawing.Color.Red;
-            this.btnDeleteRoute.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDeleteRoute.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteRoute.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDeleteRoute.Location = new System.Drawing.Point(214, 402);
-            this.btnDeleteRoute.Name = "btnDeleteRoute";
-            this.btnDeleteRoute.Size = new System.Drawing.Size(205, 39);
-            this.btnDeleteRoute.TabIndex = 4;
-            this.btnDeleteRoute.Text = "Delete";
-            this.btnDeleteRoute.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.Red;
+            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnDelete.Location = new System.Drawing.Point(214, 402);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(205, 39);
+            this.btnDelete.TabIndex = 4;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // btnAddRoute
+            // btnAdd
             // 
-            this.btnAddRoute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnAddRoute.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAddRoute.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddRoute.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAddRoute.Location = new System.Drawing.Point(425, 402);
-            this.btnAddRoute.Name = "btnAddRoute";
-            this.btnAddRoute.Size = new System.Drawing.Size(206, 39);
-            this.btnAddRoute.TabIndex = 5;
-            this.btnAddRoute.Text = "Add";
-            this.btnAddRoute.UseVisualStyleBackColor = false;
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAdd.Location = new System.Drawing.Point(425, 402);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(206, 39);
+            this.btnAdd.TabIndex = 5;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // PanelTrips
             // 
@@ -190,7 +194,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PanelTrips";
             this.Text = "PanelTrips";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRoutes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTrips)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -201,15 +205,15 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvRoutes;
+        private System.Windows.Forms.DataGridView dgvTrips;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnModifyRoute;
-        private System.Windows.Forms.Button btnDeleteRoute;
-        private System.Windows.Forms.Button btnAddRoute;
+        private System.Windows.Forms.Button btnModify;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnSearchRoutes;
-        private System.Windows.Forms.TextBox txtRoutesSearchBox;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox txtSearchBox;
     }
 }

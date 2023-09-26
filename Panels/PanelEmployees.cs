@@ -45,6 +45,11 @@ namespace TransportationProject.Panels
             }
         }
 
+        private DashboardForm FindDashboardForm()
+        {
+            return FormUtils.FindParentForm<DashboardForm>(this);
+        }
+
         private void btnSearchEmployee_Click(object sender, EventArgs e)
         {
             string searchText = txtEmployeesSearchBox.Text.Trim(); // Assuming you have a TextBox named txtEmployeeId to input the employee ID
@@ -158,20 +163,6 @@ namespace TransportationProject.Panels
             {
                 FormLoader.LoadForm(dashboardForm.mainpanel, form);
             }
-        }
-
-        private DashboardForm FindDashboardForm()
-        {
-            Control parent = this.Parent;
-            while (parent != null)
-            {
-                if (parent is DashboardForm dashboardForm)
-                {
-                    return dashboardForm;
-                }
-                parent = parent.Parent;
-            }
-            return null;
         }
     }
 }

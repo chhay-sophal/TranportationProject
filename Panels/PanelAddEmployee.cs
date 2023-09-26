@@ -21,6 +21,11 @@ namespace TransportationProject.Panels
             InitializeComponent();
         }
 
+        private DashboardForm FindDashboardForm()
+        {
+            return FormUtils.FindParentForm<DashboardForm>(this);
+        }
+
         private void btnAddEmployeeBack_Click(object sender, EventArgs e)
         {
             // Open a PanelEmployees form
@@ -73,20 +78,6 @@ namespace TransportationProject.Panels
             {
                 FormLoader.LoadForm(dashboardForm.mainpanel, form);
             }
-        }
-
-        private DashboardForm FindDashboardForm()
-        {
-            Control parent = this.Parent;
-            while (parent != null)
-            {
-                if (parent is DashboardForm dashboardForm)
-                {
-                    return dashboardForm;
-                }
-                parent = parent.Parent;
-            }
-            return null;
         }
 
         private void InsertEmployee(string firstName, string lastName, string sex, string contactNumber, string role)
