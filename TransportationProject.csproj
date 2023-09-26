@@ -80,6 +80,18 @@
     <Compile Include="Panels\PanelAddEmployee.Designer.cs">
       <DependentUpon>PanelAddEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panels\PanelAddFreightShipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelAddFreightShipment.Designer.cs">
+      <DependentUpon>PanelAddFreightShipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelAddPassengerBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelAddPassengerBooking.Designer.cs">
+      <DependentUpon>PanelAddPassengerBooking.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panels\PanelAddRoute.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +133,18 @@
     </Compile>
     <Compile Include="Panels\PanelModifyEmployee.Designer.cs">
       <DependentUpon>PanelModifyEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelModifyFreightShipments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelModifyFreightShipments.Designer.cs">
+      <DependentUpon>PanelModifyFreightShipments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelModifyPassengerBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelModifyPassengerBooking.Designer.cs">
+      <DependentUpon>PanelModifyPassengerBooking.cs</DependentUpon>
     </Compile>
     <Compile Include="Panels\PanelModifyRoute.cs">
       <SubType>Form</SubType>
@@ -205,6 +229,12 @@
     <EmbeddedResource Include="Panels\PanelAddEmployee.resx">
       <DependentUpon>PanelAddEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelAddFreightShipment.resx">
+      <DependentUpon>PanelAddFreightShipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelAddPassengerBooking.resx">
+      <DependentUpon>PanelAddPassengerBooking.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Panels\PanelAddRoute.resx">
       <DependentUpon>PanelAddRoute.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +255,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\PanelModifyEmployee.resx">
       <DependentUpon>PanelModifyEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelModifyFreightShipments.resx">
+      <DependentUpon>PanelModifyFreightShipments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelModifyPassengerBooking.resx">
+      <DependentUpon>PanelModifyPassengerBooking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\PanelModifyRoute.resx">
       <DependentUpon>PanelModifyRoute.cs</DependentUpon>
