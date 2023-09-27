@@ -29,9 +29,10 @@ CREATE TABLE Users (
 -- Create Vehicles table
 CREATE TABLE Vehicles (
     VehicleID INT IDENTITY(1,1) PRIMARY KEY,
+    Model VARCHAR(50),
     Type VARCHAR(50),
     Capacity INT,
-    LicensePlate VARCHAR(20),
+    LicensePlate VARCHAR(50),
     -- Add other relevant columns as needed
 );
 
