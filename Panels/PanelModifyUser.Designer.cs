@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtModifiedUserEmployeeId = new System.Windows.Forms.TextBox();
             this.txtUserId = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtModifiedUserUsername = new System.Windows.Forms.TextBox();
@@ -41,7 +42,6 @@
             this.btnModifyUserBack = new System.Windows.Forms.Button();
             this.txtModifiedUserPassword = new System.Windows.Forms.TextBox();
             this.cbxModifiedUserRole = new System.Windows.Forms.ComboBox();
-            this.txtModifiedUserEmployeeId = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,6 +81,16 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(634, 444);
             this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // txtModifiedUserEmployeeId
+            // 
+            this.txtModifiedUserEmployeeId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtModifiedUserEmployeeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtModifiedUserEmployeeId.Location = new System.Drawing.Point(319, 158);
+            this.txtModifiedUserEmployeeId.Name = "txtModifiedUserEmployeeId";
+            this.txtModifiedUserEmployeeId.ReadOnly = true;
+            this.txtModifiedUserEmployeeId.Size = new System.Drawing.Size(152, 26);
+            this.txtModifiedUserEmployeeId.TabIndex = 19;
             // 
             // txtUserId
             // 
@@ -219,21 +229,12 @@
             this.cbxModifiedUserRole.FormattingEnabled = true;
             this.cbxModifiedUserRole.Items.AddRange(new object[] {
             "Administrator",
-            "Staff"});
+            "Dispatcher",
+            "Receptionist"});
             this.cbxModifiedUserRole.Location = new System.Drawing.Point(319, 304);
             this.cbxModifiedUserRole.Name = "cbxModifiedUserRole";
             this.cbxModifiedUserRole.Size = new System.Drawing.Size(152, 28);
             this.cbxModifiedUserRole.TabIndex = 15;
-            // 
-            // txtModifiedUserEmployeeId
-            // 
-            this.txtModifiedUserEmployeeId.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtModifiedUserEmployeeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModifiedUserEmployeeId.Location = new System.Drawing.Point(319, 158);
-            this.txtModifiedUserEmployeeId.Name = "txtModifiedUserEmployeeId";
-            this.txtModifiedUserEmployeeId.ReadOnly = true;
-            this.txtModifiedUserEmployeeId.Size = new System.Drawing.Size(152, 26);
-            this.txtModifiedUserEmployeeId.TabIndex = 19;
             // 
             // PanelModifyUser
             // 

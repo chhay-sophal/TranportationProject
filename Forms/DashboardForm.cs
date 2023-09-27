@@ -15,10 +15,17 @@ namespace TransportationProject.Forms
 {
     public partial class DashboardForm : Form
     {
-        public DashboardForm()
+        public DashboardForm(string username)
         {
             InitializeComponent();
+
+            loggedInUsername = username;
+
+            // Display welcome message using a MessageBox
+            MessageBox.Show("Welcome, " + loggedInUsername + "!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private string loggedInUsername;
 
         private void DashboardForm_Load(object sender, EventArgs e)
         {
@@ -77,8 +84,24 @@ namespace TransportationProject.Forms
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            Form form = new Panels.PanelProfile();
+            Form form = new Panels.PanelProfile(loggedInUsername);
             FormLoader.LoadForm(mainpanel, form);
+        }
+
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            // Ask for confirmation before logging out
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Show the login form
+                LoginForm loginForm = new LoginForm();
+                loginForm.Show();
+
+                // Close the current form
+                Close();
+            }
         }
     }
 }

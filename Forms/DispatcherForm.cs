@@ -13,14 +13,21 @@ namespace TransportationProject.Forms
 {
     public partial class DispatcherForm : Form
     {
-        public DispatcherForm()
+        public DispatcherForm(string username)
         {
             InitializeComponent();
+
+            loggedInUsername = username;
+
+            // Display welcome message using a MessageBox
+            MessageBox.Show("Welcome, " + loggedInUsername + "!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void DashboardForm_Load(object sender, EventArgs e)
+        private string loggedInUsername;
+
+        private void DispatcherForm_Load(object sender, EventArgs e)
         {
-            Form form = new Panels.PanelOverview();
+            Form form = new Panels.PanelTrips();
             FormLoader.LoadForm(mainpanel, form);
         }
 
@@ -32,13 +39,24 @@ namespace TransportationProject.Forms
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            Form form = new Panels.PanelProfile();
+            Form form = new Panels.PanelProfile(loggedInUsername);
             FormLoader.LoadForm(mainpanel, form);
         }
 
         private void btnSignOut_Click(object sender, EventArgs e)
         {
+            // Ask for confirmation before logging out
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+                // Show the login form
+                LoginForm loginForm = new LoginForm();
+                loginForm.Show();
+
+                // Close the current form
+                Close();
+            }
         }
     }
 }

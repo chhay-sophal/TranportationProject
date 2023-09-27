@@ -118,6 +118,7 @@
             this.btnTrips.TabIndex = 5;
             this.btnTrips.Text = "Trips";
             this.btnTrips.UseVisualStyleBackColor = true;
+            this.btnTrips.Click += new System.EventHandler(this.btnTrips_Click);
             // 
             // btnProfile
             // 
@@ -128,6 +129,7 @@
             this.btnProfile.TabIndex = 8;
             this.btnProfile.Text = "Profile";
             this.btnProfile.UseVisualStyleBackColor = true;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // btnSignOut
             // 
@@ -140,6 +142,7 @@
             this.btnSignOut.TabIndex = 9;
             this.btnSignOut.Text = "Sign Out";
             this.btnSignOut.UseVisualStyleBackColor = false;
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
             // btnPassengerBookings
             // 
@@ -150,6 +153,7 @@
             this.btnPassengerBookings.TabIndex = 10;
             this.btnPassengerBookings.Text = "Passenger Bookings";
             this.btnPassengerBookings.UseVisualStyleBackColor = true;
+            this.btnPassengerBookings.Click += new System.EventHandler(this.btnPassengerBookings_Click);
             // 
             // btnFreightShipments
             // 
@@ -160,6 +164,7 @@
             this.btnFreightShipments.TabIndex = 11;
             this.btnFreightShipments.Text = "Freight Shipments";
             this.btnFreightShipments.UseVisualStyleBackColor = true;
+            this.btnFreightShipments.Click += new System.EventHandler(this.btnFreightShipments_Click);
             // 
             // ReceptionistForm
             // 
@@ -169,6 +174,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ReceptionistForm";
             this.Text = "ReceptionistForm";
+            this.Load += new System.EventHandler(this.ReceptionistForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);

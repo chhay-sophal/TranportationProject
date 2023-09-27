@@ -147,6 +147,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "DispatcherForm";
             this.Text = "DispatcherForm";
+            this.Load += new System.EventHandler(this.DispatcherForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);

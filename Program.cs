@@ -16,7 +16,7 @@ namespace TransportationProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Forms.DashboardForm());
+            Application.Run(new Forms.LoginForm());
         }
     }
 }
