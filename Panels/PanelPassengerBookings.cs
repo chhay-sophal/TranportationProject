@@ -45,6 +45,10 @@ namespace TransportationProject.Panels
             return FormUtils.FindParentForm<DashboardForm>(this);
         }
 
+        private ReceptionistForm FindReceptionistForm()
+        {
+            return FormUtils.FindParentForm<ReceptionistForm>(this);
+        }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
@@ -61,9 +65,7 @@ namespace TransportationProject.Panels
                     "ContactNumber LIKE @SearchText OR " +
                     "TripID LIKE @SearchText OR " +
                     "SeatNumber LIKE @SearchText OR " +
-                    "Fare LIKE @SearchText OR " +
-                    "PickupLocation LIKE @SearchText OR " +
-                    "DeliveryLocation LIKE @SearchText";
+                    "Fare LIKE @SearchText";
 
                 SqlCommand command = new SqlCommand(sqlQuery, connection);
                 command.Parameters.AddWithValue("@SearchText", "%" + searchText + "%");
@@ -98,9 +100,14 @@ namespace TransportationProject.Panels
                 Form form = new PanelModifyPassengerBooking(selectedBookingId, selectedCustomerName,
                     selectedContactNumber, selectedTripId, selectedSeatNumber, selectedFare);
                 DashboardForm dashboardForm = FindDashboardForm();
+                ReceptionistForm receptionistForm = FindReceptionistForm();
                 if (dashboardForm != null)
                 {
                     FormLoader.LoadForm(dashboardForm.mainpanel, form);
+                }
+                if (receptionistForm != null)
+                {
+                    FormLoader.LoadForm(receptionistForm.mainpanel, form);
                 }
             }
             else
@@ -158,9 +165,15 @@ namespace TransportationProject.Panels
             // Switch to the PanelAddPassengerBooking panel
             Form form = new PanelAddPassengerBooking();
             DashboardForm dashboardForm = FindDashboardForm();
+            ReceptionistForm receptionistForm = FindReceptionistForm();
+
             if (dashboardForm != null)
             {
                 FormLoader.LoadForm(dashboardForm.mainpanel, form);
+            }
+            if (receptionistForm != null)
+            {
+                FormLoader.LoadForm(receptionistForm.mainpanel, form);
             }
         }
     }

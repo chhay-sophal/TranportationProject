@@ -26,14 +26,24 @@ namespace TransportationProject.Panels
             return FormUtils.FindParentForm<DashboardForm>(this);
         }
 
+        private DispatcherForm FindDispatcherForm()
+        {
+            return FormUtils.FindParentForm<DispatcherForm>(this);
+        }
+
         private void btnBack_Click(object sender, EventArgs e)
         {
             // Open a PanelRoutes form
             Form form = new PanelRoutes();
             DashboardForm dashboardForm = FindDashboardForm();
+            DispatcherForm dispatcherForm = FindDispatcherForm();
             if (dashboardForm != null)
             {
                 FormLoader.LoadForm(dashboardForm.mainpanel, form);
+            }
+            if (dispatcherForm != null)
+            {
+                FormLoader.LoadForm(dispatcherForm.mainpanel, form);
             }
         }
 
@@ -75,9 +85,14 @@ namespace TransportationProject.Panels
             // Open a PanelRoutes form
             Form form = new PanelRoutes();
             DashboardForm dashboardForm = FindDashboardForm();
+            DispatcherForm dispatcherForm = FindDispatcherForm();
             if (dashboardForm != null)
             {
                 FormLoader.LoadForm(dashboardForm.mainpanel, form);
+            }
+            if (dispatcherForm != null)
+            {
+                FormLoader.LoadForm(dispatcherForm.mainpanel, form);
             }
         }
 

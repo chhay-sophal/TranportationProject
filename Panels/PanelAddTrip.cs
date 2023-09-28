@@ -27,6 +27,16 @@ namespace TransportationProject.Panels
             return FormUtils.FindParentForm<DashboardForm>(this);
         }
 
+        private DispatcherForm FindDispatcherForm()
+        {
+            return FormUtils.FindParentForm<DispatcherForm>(this);
+        }
+
+        private ReceptionistForm FindReceptionistForm()
+        {
+            return FormUtils.FindParentForm<ReceptionistForm>(this);
+        }
+
 
         private void Form_Load()
         {
@@ -126,9 +136,19 @@ namespace TransportationProject.Panels
             // Open a PanelEmployees form
             Form form = new PanelEmployees();
             DashboardForm dashboardForm = FindDashboardForm();
+            DispatcherForm dispatcherForm = FindDispatcherForm();
+            ReceptionistForm receptionistForm = FindReceptionistForm();
             if (dashboardForm != null)
             {
                 FormLoader.LoadForm(dashboardForm.mainpanel, form);
+            }
+            if (dispatcherForm != null)
+            {
+                FormLoader.LoadForm(dispatcherForm.mainpanel, form);
+            }
+            if (receptionistForm != null)
+            {
+                FormLoader.LoadForm(receptionistForm.mainpanel, form);
             }
         }
 
@@ -157,9 +177,19 @@ namespace TransportationProject.Panels
             // Open a PanelTrips form
             Form form = new PanelTrips();
             DashboardForm dashboardForm = FindDashboardForm();
+            DispatcherForm dispatcherForm = FindDispatcherForm();
+            ReceptionistForm receptionistForm = FindReceptionistForm();
             if (dashboardForm != null)
             {
                 FormLoader.LoadForm(dashboardForm.mainpanel, form);
+            }
+            if (dispatcherForm != null)
+            {
+                FormLoader.LoadForm(dispatcherForm.mainpanel, form);
+            }
+            if (receptionistForm != null)
+            {
+                FormLoader.LoadForm(receptionistForm.mainpanel, form);
             }
         }
 

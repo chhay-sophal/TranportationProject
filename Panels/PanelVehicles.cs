@@ -50,6 +50,11 @@ namespace TransportationProject.Panels
             return FormUtils.FindParentForm<DashboardForm>(this);
         }
 
+        private DispatcherForm FindDispatcherForm()
+        {
+            return FormUtils.FindParentForm<DispatcherForm>(this);
+        }
+
         private void btnSearchVehicle_Click(object sender, EventArgs e)
         {
             string searchText = txtVehiclesSearchBox.Text.Trim(); // Assuming you have a TextBox named txtEmployeeId to input the employee ID
@@ -97,9 +102,14 @@ namespace TransportationProject.Panels
                 // Switch to the PanelModifyEmployee panel
                 Form form = new PanelModifyVehicle(selectedVehicleId, selectedModel, selectedType, selectedCapacity, selectedLicensePlate);
                 DashboardForm dashboardForm = FindDashboardForm();
+                DispatcherForm dispatcherForm = FindDispatcherForm();
                 if (dashboardForm != null)
                 {
                     FormLoader.LoadForm(dashboardForm.mainpanel, form);
+                }
+                if (dispatcherForm != null)
+                {
+                    FormLoader.LoadForm(dispatcherForm.mainpanel, form);
                 }
             }
             else
@@ -154,12 +164,17 @@ namespace TransportationProject.Panels
 
         private void btnAddVehicle_Click(object sender, EventArgs e)
         {
-            // Switch to the PanelAddEmployee panel
+            // Switch to the PanelAddUser panel
             Form form = new PanelAddVehicle();
             DashboardForm dashboardForm = FindDashboardForm();
+            DispatcherForm dispatcherForm = FindDispatcherForm();
             if (dashboardForm != null)
             {
                 FormLoader.LoadForm(dashboardForm.mainpanel, form);
+            }
+            if (dispatcherForm != null)
+            {
+                FormLoader.LoadForm(dispatcherForm.mainpanel, form);
             }
         }
     }

@@ -45,6 +45,11 @@ namespace TransportationProject.Panels
             return FormUtils.FindParentForm<DashboardForm>(this);
         }
 
+        private ReceptionistForm FindReceptionistForm()
+        {
+            return FormUtils.FindParentForm<ReceptionistForm>(this);
+        }
+
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string searchText = txtSearchBox.Text.Trim();
@@ -101,9 +106,14 @@ namespace TransportationProject.Panels
                     selectedContactNumber, selectedTripId, selectedWeight, selectedGoodsType,
                     selectedPickupLocation, selectedDeliveryLocation);
                 DashboardForm dashboardForm = FindDashboardForm();
+                ReceptionistForm receptionistForm = FindReceptionistForm();
                 if (dashboardForm != null)
                 {
                     FormLoader.LoadForm(dashboardForm.mainpanel, form);
+                }
+                if (receptionistForm != null)
+                {
+                    FormLoader.LoadForm(receptionistForm.mainpanel, form);
                 }
             }
             else
@@ -161,9 +171,14 @@ namespace TransportationProject.Panels
             // Switch to the PanelAddRoute panel
             Form form = new PanelAddFreightShipment();
             DashboardForm dashboardForm = FindDashboardForm();
+            ReceptionistForm receptionistForm = FindReceptionistForm();
             if (dashboardForm != null)
             {
                 FormLoader.LoadForm(dashboardForm.mainpanel, form);
+            }
+            if (receptionistForm != null)
+            {
+                FormLoader.LoadForm(receptionistForm.mainpanel, form);
             }
         }
     }

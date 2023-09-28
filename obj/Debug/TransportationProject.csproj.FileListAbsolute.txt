@@ -35,3 +35,4 @@ C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2
 C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelAddPassengerBooking.resources
 C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelModifyFreightShipments.resources
 C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelModifyPassengerBooking.resources
+C:\Users\sokph\OneDrive - Acleda Institute of Business\University\year2semester2\IT 207 - .NET C# PROGRAMMING II\TransportationProject\obj\Debug\TransportationProject.Panels.PanelReceptionistTrips.resources

@@ -45,6 +45,11 @@ namespace TransportationProject.Panels
             return FormUtils.FindParentForm<DashboardForm>(this);
         }
 
+        private DispatcherForm FindDispatcherForm()
+        {
+            return FormUtils.FindParentForm<DispatcherForm>(this);
+        }
+
         private void btnSearchRoutes_Click(object sender, EventArgs e)
         {
             string searchText = txtRoutesSearchBox.Text.Trim(); 
@@ -92,9 +97,14 @@ namespace TransportationProject.Panels
                 // Switch to the PanelModifyRoute panel
                 Form form = new PanelModifyRoute(selectedRouteId, selectedStartLocation, selectedEndLocation, selectedDistance, selectedTravelTime);
                 DashboardForm dashboardForm = FindDashboardForm();
+                DispatcherForm dispatcherForm = FindDispatcherForm();
                 if (dashboardForm != null)
                 {
                     FormLoader.LoadForm(dashboardForm.mainpanel, form);
+                }
+                if (dispatcherForm != null)
+                {
+                    FormLoader.LoadForm(dispatcherForm.mainpanel, form);
                 }
             }
             else
@@ -152,9 +162,14 @@ namespace TransportationProject.Panels
             // Switch to the PanelAddRoute panel
             Form form = new PanelAddRoute();
             DashboardForm dashboardForm = FindDashboardForm();
+            DispatcherForm dispatcherForm = FindDispatcherForm();
             if (dashboardForm != null)
             {
                 FormLoader.LoadForm(dashboardForm.mainpanel, form);
+            }
+            if (dispatcherForm != null)
+            {
+                FormLoader.LoadForm(dispatcherForm.mainpanel, form);
             }
         }
     }

@@ -42,6 +42,11 @@ namespace TransportationProject.Panels
             return FormUtils.FindParentForm<DashboardForm>(this);
         }
 
+        private ReceptionistForm FindReceptionistForm()
+        {
+            return FormUtils.FindParentForm<ReceptionistForm>(this);
+        }
+
         private void Form_Load()
         {
             // Retrieve the vehicle IDs from the database
@@ -79,9 +84,14 @@ namespace TransportationProject.Panels
             // Open a PanelFreightShipments form
             Form form = new PanelFreightShipments();
             DashboardForm dashboardForm = FindDashboardForm();
+            ReceptionistForm receptionistForm = FindReceptionistForm();
             if (dashboardForm != null)
             {
                 FormLoader.LoadForm(dashboardForm.mainpanel, form);
+            }
+            if (receptionistForm != null)
+            {
+                FormLoader.LoadForm(receptionistForm.mainpanel, form);
             }
         }
 
@@ -126,9 +136,14 @@ namespace TransportationProject.Panels
                 // Open a PanelFreightShipments form
                 Form form = new PanelFreightShipments();
                 DashboardForm dashboardForm = FindDashboardForm();
+                ReceptionistForm receptionistForm = FindReceptionistForm();
                 if (dashboardForm != null)
                 {
                     FormLoader.LoadForm(dashboardForm.mainpanel, form);
+                }
+                if (receptionistForm != null)
+                {
+                    FormLoader.LoadForm(receptionistForm.mainpanel, form);
                 }
             }
         }

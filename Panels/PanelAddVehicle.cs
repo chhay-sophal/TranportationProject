@@ -26,14 +26,24 @@ namespace TransportationProject.Panels
             return FormUtils.FindParentForm<DashboardForm>(this);
         }
 
+        private DispatcherForm FindDispatcherForm()
+        {
+            return FormUtils.FindParentForm<DispatcherForm>(this);
+        }
+
         private void btnAddVehicleBack_Click(object sender, EventArgs e)
         {
             // Open a PanelVehicles form
             Form form = new PanelVehicles();
             DashboardForm dashboardForm = FindDashboardForm();
+            DispatcherForm dispatcherForm = FindDispatcherForm();
             if (dashboardForm != null)
             {
                 FormLoader.LoadForm(dashboardForm.mainpanel, form);
+            }
+            if (dispatcherForm != null)
+            {
+                FormLoader.LoadForm(dispatcherForm.mainpanel, form);
             }
         }
 
@@ -63,12 +73,17 @@ namespace TransportationProject.Panels
             // Optionally, you can show a success message or perform other actions as needed
             MessageBox.Show("Vehicle added successfully!", "Add Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            // Open a PanelEmployees form
+            // Open a PanelVehiles form
             Form form = new PanelVehicles();
             DashboardForm dashboardForm = FindDashboardForm();
+            DispatcherForm dispatcherForm = FindDispatcherForm();
             if (dashboardForm != null)
             {
                 FormLoader.LoadForm(dashboardForm.mainpanel, form);
+            }
+            if (dispatcherForm != null)
+            {
+                FormLoader.LoadForm(dispatcherForm.mainpanel, form);
             }
         }
 

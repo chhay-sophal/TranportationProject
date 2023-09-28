@@ -27,8 +27,7 @@ namespace TransportationProject.Forms
 
         private void ReceptionistForm_Load(object sender, EventArgs e)
         {
-            Form form = new Panels.PanelPassengerBookings();
-            FormLoader.LoadForm(mainpanel, form);
+            btnPassengerBookings_Click(sender, e);
         }
 
         private void btnPassengerBookings_Click(object sender, EventArgs e)
@@ -45,7 +44,7 @@ namespace TransportationProject.Forms
 
         private void btnTrips_Click(object sender, EventArgs e)
         {
-            Form form = new Panels.PanelTrips();
+            Form form = new Panels.PanelReceptionistTrips();
             FormLoader.LoadForm(mainpanel, form);
         }
 

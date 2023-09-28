@@ -41,6 +41,11 @@ namespace TransportationProject.Panels
             return FormUtils.FindParentForm<DashboardForm>(this);
         }
 
+        private DispatcherForm FindDispatcherForm()
+        {
+            return FormUtils.FindParentForm<DispatcherForm>(this);
+        }
+
         private void Form_Load()
         {
             // Retrieve the vehicle IDs from the database
@@ -143,6 +148,12 @@ namespace TransportationProject.Panels
             {
                 FormLoader.LoadForm(dashboardForm.mainpanel, form);
             }
+
+            DispatcherForm dispatcherForm = FindDispatcherForm();
+            if (dispatcherForm != null)
+            {
+                FormLoader.LoadForm(dispatcherForm.mainpanel, form);
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -172,6 +183,12 @@ namespace TransportationProject.Panels
                 if (dashboardForm != null)
                 {
                     FormLoader.LoadForm(dashboardForm.mainpanel, form);
+                }
+
+                DispatcherForm dispatcherForm = FindDispatcherForm();
+                if (dispatcherForm != null)
+                {
+                    FormLoader.LoadForm(dispatcherForm.mainpanel, form);
                 }
             }
         }

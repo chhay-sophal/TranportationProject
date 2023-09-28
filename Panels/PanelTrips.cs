@@ -45,6 +45,11 @@ namespace TransportationProject.Panels
             return FormUtils.FindParentForm<DashboardForm>(this);
         }
 
+        private DispatcherForm FindDispatcherForm()
+        {
+            return FormUtils.FindParentForm<DispatcherForm>(this);
+        }
+
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string searchText = txtSearchBox.Text.Trim(); // Assuming you have a TextBox named txtEmployeeId to input the employee ID
@@ -55,9 +60,9 @@ namespace TransportationProject.Panels
                 connection.Open();
 
                 string sqlQuery = "SELECT * FROM Trips WHERE " +
-                    "TripsID LIKE @SearchText OR " +
+                    "TripID LIKE @SearchText OR " +
                     "VehicleID LIKE @SearchText OR " +
-                    "Driver LIKE @SearchText OR " +
+                    "DriverID LIKE @SearchText OR " +
                     "StartTime LIKE @SearchText OR " +
                     "EndTime LIKE @SearchText OR " +
                     "RouteID LIKE @SearchText";
@@ -93,10 +98,17 @@ namespace TransportationProject.Panels
 
                 // Switch to the PanelModifyTrip panel
                 Form form = new PanelModifyTrip(selectedTripID, selectedVehicleID, selectedDriverID, selectedStartTime, selectedEndTime, selectedRouteID);
+                
                 DashboardForm dashboardForm = FindDashboardForm();
                 if (dashboardForm != null)
                 {
                     FormLoader.LoadForm(dashboardForm.mainpanel, form);
+                }
+
+                DispatcherForm dispatcherForm = FindDispatcherForm();
+                if (dispatcherForm != null)
+                {
+                    FormLoader.LoadForm(dispatcherForm.mainpanel, form);
                 }
             }
             else
@@ -153,9 +165,14 @@ namespace TransportationProject.Panels
         {
             Form form = new PanelAddTrip();
             DashboardForm dashboardForm = FindDashboardForm();
+            DispatcherForm dispatcherForm = FindDispatcherForm();
             if (dashboardForm != null)
             {
                 FormLoader.LoadForm(dashboardForm.mainpanel, form);
+            }
+            if (dispatcherForm != null)
+            {
+                FormLoader.LoadForm(dispatcherForm.mainpanel, form);
             }
         }
     }

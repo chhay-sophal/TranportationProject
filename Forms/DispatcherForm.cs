@@ -37,6 +37,18 @@ namespace TransportationProject.Forms
             FormLoader.LoadForm(mainpanel, form);
         }
 
+        private void btnRoutes_Click(object sender, EventArgs e)
+        {
+            Form form = new Panels.PanelRoutes();
+            FormLoader.LoadForm(mainpanel, form);
+        }
+
+        private void btnVehicles_Click(object sender, EventArgs e)
+        {
+            Form form = new Panels.PanelVehicles();
+            FormLoader.LoadForm(mainpanel, form);
+        }
+
         private void btnProfile_Click(object sender, EventArgs e)
         {
             Form form = new Panels.PanelProfile(loggedInUsername);

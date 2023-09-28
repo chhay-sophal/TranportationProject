@@ -109,13 +109,24 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(154, 332);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
+            // btnPassengerBookings
+            // 
+            this.btnPassengerBookings.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPassengerBookings.Location = new System.Drawing.Point(3, 3);
+            this.btnPassengerBookings.Name = "btnPassengerBookings";
+            this.btnPassengerBookings.Size = new System.Drawing.Size(148, 27);
+            this.btnPassengerBookings.TabIndex = 5;
+            this.btnPassengerBookings.Text = "Passenger Bookings";
+            this.btnPassengerBookings.UseVisualStyleBackColor = true;
+            this.btnPassengerBookings.Click += new System.EventHandler(this.btnPassengerBookings_Click);
+            // 
             // btnTrips
             // 
             this.btnTrips.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnTrips.Location = new System.Drawing.Point(3, 69);
             this.btnTrips.Name = "btnTrips";
             this.btnTrips.Size = new System.Drawing.Size(148, 27);
-            this.btnTrips.TabIndex = 5;
+            this.btnTrips.TabIndex = 10;
             this.btnTrips.Text = "Trips";
             this.btnTrips.UseVisualStyleBackColor = true;
             this.btnTrips.Click += new System.EventHandler(this.btnTrips_Click);
@@ -143,17 +154,6 @@
             this.btnSignOut.Text = "Sign Out";
             this.btnSignOut.UseVisualStyleBackColor = false;
             this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
-            // 
-            // btnPassengerBookings
-            // 
-            this.btnPassengerBookings.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPassengerBookings.Location = new System.Drawing.Point(3, 3);
-            this.btnPassengerBookings.Name = "btnPassengerBookings";
-            this.btnPassengerBookings.Size = new System.Drawing.Size(148, 27);
-            this.btnPassengerBookings.TabIndex = 10;
-            this.btnPassengerBookings.Text = "Passenger Bookings";
-            this.btnPassengerBookings.UseVisualStyleBackColor = true;
-            this.btnPassengerBookings.Click += new System.EventHandler(this.btnPassengerBookings_Click);
             // 
             // btnFreightShipments
             // 

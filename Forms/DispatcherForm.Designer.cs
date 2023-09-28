@@ -35,6 +35,8 @@
             this.btnTrips = new System.Windows.Forms.Button();
             this.btnProfile = new System.Windows.Forms.Button();
             this.btnSignOut = new System.Windows.Forms.Button();
+            this.btnRoutes = new System.Windows.Forms.Button();
+            this.btnVehicles = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -85,8 +87,10 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Controls.Add(this.btnTrips, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnProfile, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.btnProfile, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.btnSignOut, 0, 9);
+            this.tableLayoutPanel2.Controls.Add(this.btnRoutes, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.btnVehicles, 0, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 115);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -101,6 +105,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(154, 332);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
@@ -118,7 +123,7 @@
             // btnProfile
             // 
             this.btnProfile.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnProfile.Location = new System.Drawing.Point(3, 36);
+            this.btnProfile.Location = new System.Drawing.Point(3, 102);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Size = new System.Drawing.Size(148, 27);
             this.btnProfile.TabIndex = 8;
@@ -138,6 +143,28 @@
             this.btnSignOut.Text = "Sign Out";
             this.btnSignOut.UseVisualStyleBackColor = false;
             this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
+            // 
+            // btnRoutes
+            // 
+            this.btnRoutes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnRoutes.Location = new System.Drawing.Point(3, 36);
+            this.btnRoutes.Name = "btnRoutes";
+            this.btnRoutes.Size = new System.Drawing.Size(148, 27);
+            this.btnRoutes.TabIndex = 10;
+            this.btnRoutes.Text = "Routes";
+            this.btnRoutes.UseVisualStyleBackColor = true;
+            this.btnRoutes.Click += new System.EventHandler(this.btnRoutes_Click);
+            // 
+            // btnVehicles
+            // 
+            this.btnVehicles.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnVehicles.Location = new System.Drawing.Point(3, 69);
+            this.btnVehicles.Name = "btnVehicles";
+            this.btnVehicles.Size = new System.Drawing.Size(148, 27);
+            this.btnVehicles.TabIndex = 11;
+            this.btnVehicles.Text = "Vehicles";
+            this.btnVehicles.UseVisualStyleBackColor = true;
+            this.btnVehicles.Click += new System.EventHandler(this.btnVehicles_Click);
             // 
             // DispatcherForm
             // 
@@ -164,5 +191,7 @@
         private System.Windows.Forms.Button btnTrips;
         private System.Windows.Forms.Button btnProfile;
         private System.Windows.Forms.Button btnSignOut;
+        private System.Windows.Forms.Button btnRoutes;
+        private System.Windows.Forms.Button btnVehicles;
     }
 }
