@@ -28,7 +28,14 @@ namespace TransportationProject.Panels
             {
                 connection.Open();
 
-                string sqlQuery = "SELECT * FROM FreightShipments";
+                string sqlQuery = @"SELECT f.ShipmentID, f.CustomerName, f.ContactNumber, t.TripID,
+                                           CONVERT(date, t.StartTime) AS StartDate, 
+                                           CONVERT(date, t.EndTime) AS EndDate,
+                                           r.StartLocation, r.EndLocation,
+                                           f.Weight, f.GoodsType, f.PickupLocation, f.DeliveryLocation
+                                    FROM FreightShipments f
+                                    INNER JOIN Trips t ON f.TripID = t.TripID
+                                    INNER JOIN Routes r ON t.RouteID = r.RouteID;";
                 SqlCommand command = new SqlCommand(sqlQuery, connection);
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
                 DataTable dataTable = new DataTable();

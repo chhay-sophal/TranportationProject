@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,7 +29,10 @@ namespace TransportationProject.Panels
             {
                 connection.Open();
 
-                string sqlQuery = "SELECT * FROM PassengerBookings";
+                string sqlQuery = @"SELECT p.BookingID, p.CustomerName, p.ContactNumber, p.SeatNumber, t.TripID, t.StartTime, t.EndTime, r.StartLocation, r.EndLocation, p.Fare
+                            FROM PassengerBookings p
+                            INNER JOIN Trips t ON p.TripID = t.TripID
+                            INNER JOIN Routes r on t.RouteID = r.RouteID;";
                 SqlCommand command = new SqlCommand(sqlQuery, connection);
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
                 DataTable dataTable = new DataTable();

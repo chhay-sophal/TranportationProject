@@ -28,8 +28,11 @@ namespace TransportationProject.Panels
             {
                 connection.Open();
 
-                string sqlQuery = "SELECT * FROM Trips";
-                SqlCommand command = new SqlCommand(sqlQuery, connection);
+                string sqlQuery = @"SELECT t.TripID, v.VehicleID, v.Type, t.DriverID, t.StartTime, t.EndTime, e.FirstName + e.LastName as DriverName, r.RouteID, r.StartLocation + ' - ' + r.EndLocation AS [Route Location]
+                            FROM Trips t
+                            INNER JOIN Vehicles v ON t.VehicleID = v.VehicleID
+                            INNER JOIN Employees e ON t.DriverID = e.EmployeeID
+                            INNER JOIN Routes r ON t.RouteID = r.RouteID;"; SqlCommand command = new SqlCommand(sqlQuery, connection);
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
                 DataTable dataTable = new DataTable();
                 dataAdapter.Fill(dataTable);
