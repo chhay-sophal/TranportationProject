@@ -18,7 +18,7 @@ namespace TransportationProject.Panels
         {
             InitializeComponent();
 
-            // Retrieve the count of users and employees from the database or data source
+            // Retrieve the count from the database or data source
             int shipmentCount = GetTotalShipmentCount();
             int bookingCount = GetTotalBookingCount();
             int vehicleCount = GetTotalVehicleCount();
