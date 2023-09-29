@@ -144,7 +144,6 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "LoginForm";
             this.Text = "LoginForm";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LoginForm_KeyDown);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

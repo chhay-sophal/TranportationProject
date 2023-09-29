@@ -312,6 +312,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\DataSources\TransportationProject.Forms.DashboardForm.datasource" />
@@ -334,6 +335,29 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vehicle_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\route_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trip_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freight_shipments_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passenger_booking_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
